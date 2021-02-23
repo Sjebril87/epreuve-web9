@@ -1,0 +1,163 @@
+//ma palette de couleur
+$color-primary: #000000;
+$color-secondary: #ffff;
+$color-section1: #f0b9c2;
+$color-ornage: #d35b23;
+$color-section1-secondary: #abd4e7;
+
+$main-font: "open_sansregular";
+.App {
+  text-align: center;
+
+  .App-header {
+    img {
+      margin: auto;
+      left: 50%;
+      width: 20%;
+    }
+    .play{
+      width: 150px;
+      height: 40px;
+      background: $color-ornage;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-right: 80%;
+    }
+  }
+  .App-section1 {
+    background-color: $color-section1;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .cercle {
+      background: repeating-linear-gradient(
+        60deg,
+        #f0b9c2,
+        #f0b9c2 15px,
+        #d35b23 12px,
+        #d35b23 22px
+      );
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      position: absolute;
+      margin-left: 22%;
+      margin-top: 30px;
+    }
+    .cercle3 {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      background-color: $color-ornage;
+      top: 58%;
+      left: 76%;
+      position: absolute;
+    }
+    .contenent {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      position: absolute;
+      .section-contenent {
+        background-color: $color-secondary;
+        width: 30%;
+        height: 90%;
+        margin-left: 30%;
+        margin-top: 8%;
+
+        .cercle2 {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          margin-top: 8%;
+          margin-left: 3%;
+          background-image: url("./component/curry_de_legume.jpg");
+        }
+        .text {
+          p {
+            font-family: $main-font;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+        .button {
+          font-family: $main-font;
+          font-weight: bold;
+          font-size: 18px;
+          height: 40px;
+          width: 200px;
+          color: $color-secondary;
+          background-color: $color-ornage;
+          border-radius: 5%;
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+  //section2
+  .App-section2 {
+    .flex {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    .contenent-left{
+      width: 30%;
+    .title1 {
+      color: $color-ornage;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    .title2 {
+      color: $color-primary;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    p {
+      font-family: $main-font;
+      text-align: center;
+      font-weight: bold;
+    }
+    .button2 {
+      position: absolute;
+
+      width: 150px;
+      height: 40px;
+      background: $color-ornage;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+
+    .contenent-right{
+      width: 30%;
+      
+    }
+  }
+    .carousel{
+      width: 20%;
+      margin-left: 30%;
+      margin-top: 10%;
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly;
+    }
+  }
+  .footer{
+    background-color: gray;
+    height: 50px;
+    font-family: $main-font;
+    color: white;
+    font-weight: bold;
+    a{
+      color:rgb(144, 53, 20)
+    }
+  }
+    
+}
