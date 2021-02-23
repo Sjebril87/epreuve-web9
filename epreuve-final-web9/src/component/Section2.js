@@ -1,4 +1,31 @@
+
+
 const Section2 = () => {
+    const arry=[
+        {
+        date:"23 février",
+        entrées:["endive, salade croquante et vinaigrette à l'orange", "potage de courge ( selon marché)"],
+        plats:["Falafel Burger: Bun's au sarrasin, galette de poischiche frite, coleslaw, sauce tahini , accompagné de pommes de terre sautées.", "Burger Salvi: Bun's au sarrasin, épaule de cochon confite au cidre, sauce BBC maison, champignons, accompagné de pommes de terre sautées." ],
+        desserts:["cookie au chocolat", "salade de fruits frais"]
+        },
+        {
+        date:"22 février",
+        entrées:["Toast de Labneh et salade verte", "soupe de carottes aux fines herbes"],
+        plats:["Poêlée poireaux champignons échalotes, Tagliatelle maison, sauce Gorgonzola", "Bœuf Bourguignon, Tagliatelle maison" ],
+        desserts:["Carrot cake amandes, noisettes, citron", "Panna Cotta, coulis de poire, spéculos"]
+        },
+        {
+        date:"19 février",
+        entrées:["Salade de lentilles et feta, vinaigrette au miel", "Velouté pois cassés coco"],
+        plats:["Brandade de lieu au citron vert et brocoli vapeur", "carottes, buternut et 1/2 oignon rouge rôtis au balsamique, pesto de feuilles de céleri  et mascarpone, riz noir" ],
+        desserts:["Salade de fruits", "Crêpe caramel au beurre salée"]
+        },
+        {
+        date:"18 février",
+        entrées:["Velouté de potimarron", "salade d'hiver composée et vinaigrette à l'orange"],
+        plats:["Saucisse aux herbes et polenta crémeuse, sauce au vin rouge thym et oignons confits", "Gratin de Crozets, poireau champignons et comté" ],
+        desserts:["Compote de pommes au Calvados et tuiles de sarrasin", "Muffin au citron"]
+        }]
   return (
     <div className="App-section2">
         <div className="flex">
@@ -33,7 +60,21 @@ const Section2 = () => {
     
 
       </div>
-          
+      <div id="modal">{}
+              <hr />
+              <div class="ml-auto">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  <a href="https://fr.wikipedia.org/wiki/Astrologie_chinoise">
+                    See more
+                  </a>
+                </button>
+                <button
+                  class="bg-transparent hover:bg-gray-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+                  >
+                  Close
+                </button>
+              </div>
+            </div>
      
     </div>
   );
